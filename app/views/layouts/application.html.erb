@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jobtrackr</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 min-h-screen">
+    <nav class="bg-blue-700 text-white px-6 py-4 shadow">
+      <a href="/job_applications" class="text-xl font-bold tracking-tight">Jobtrackr</a>
+    </nav>
+    <main class="max-w-4xl mx-auto px-4 py-8">
+      <%= yield %>
+    </main>
+  </body>
+</html>
